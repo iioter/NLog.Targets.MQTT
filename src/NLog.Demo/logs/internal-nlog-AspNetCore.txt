@@ -1,0 +1,10 @@
+2022-06-17 16:35:43.5486 Info Message Template Auto Format enabled
+2022-06-17 16:35:43.5486 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-17 16:35:43.5486 Info Loading assembly: NLog.Targets.MQTT
+2022-06-17 16:35:43.5979 Info Adding target FileTarget(Name=allfile)
+2022-06-17 16:35:43.5979 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-17 16:35:43.5979 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-17 16:35:43.5979 Info Adding target MqttTarget(Name=mqtt)
+2022-06-17 16:35:43.6129 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-17 16:35:43.6205 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: mqtt
+2022-06-17 16:35:44.0063 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config

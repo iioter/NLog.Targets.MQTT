@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.1;netstandard2.0;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<LangVersion>latest</LangVersion>
+		
+		<Company>iotgateway</Company>
+		<Authors>iioter</Authors>
+		<PackageId>NLog.Targets.MQTT</PackageId>
+		<Title>NLog.Targets.MQTT</Title>
+		<Description>An NLog Target To MQTT Broker</Description>
+		
+		<PackageTags>NLog Mqtt Log Logging</PackageTags>
+		<Version>0.1.0.1</Version>
+		<PackageProjectUrl>https://github.com/iioter/NLog.Targets.MQTT</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/iioter/NLog.Targets.MQTT</RepositoryUrl>
+		<PackageReleaseNotes>https://github.com/iioter/NLog.Targets.MQTT</PackageReleaseNotes>
+		<RepositoryType>Git</RepositoryType>
+		<Copyright>iotgateway</Copyright>
+		<AssemblyVersion>0.1.0.1</AssemblyVersion>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>NLog.Targets.MQTT.png</PackageIcon>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="MQTTnet" Version="3.1.2" />
+		<PackageReference Include="NLog" Version="5.0.1" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <None Update="..\..\NLog.Targets.MQTT.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+	
+
+	<ItemGroup>
+		<None Include="..\..\NLog.Targets.MQTT.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
