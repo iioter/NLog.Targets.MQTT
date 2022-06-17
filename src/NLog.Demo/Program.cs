@@ -1,6 +1,7 @@
 using NLog;
 using NLog.Web;
 
+//Warnning 这里的NLog.Targets.MQTT是通过nuget引用，调试可以用项目引用
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
 
