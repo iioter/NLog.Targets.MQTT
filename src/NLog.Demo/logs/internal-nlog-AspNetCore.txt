@@ -1,10 +1,614 @@
-2022-06-17 16:35:43.5486 Info Message Template Auto Format enabled
-2022-06-17 16:35:43.5486 Info Loading assembly: NLog.Web.AspNetCore
-2022-06-17 16:35:43.5486 Info Loading assembly: NLog.Targets.MQTT
-2022-06-17 16:35:43.5979 Info Adding target FileTarget(Name=allfile)
-2022-06-17 16:35:43.5979 Info Adding target FileTarget(Name=ownFile-web)
-2022-06-17 16:35:43.5979 Info Adding target ConsoleTarget(Name=lifetimeConsole)
-2022-06-17 16:35:43.5979 Info Adding target MqttTarget(Name=mqtt)
-2022-06-17 16:35:43.6129 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
-2022-06-17 16:35:43.6205 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: mqtt
-2022-06-17 16:35:44.0063 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:29:44.2979 Info Message Template Auto Format enabled
+2022-06-20 10:29:44.3064 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:29:44.3064 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:29:44.6088 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:29:44.6088 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:29:44.6088 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:29:44.6088 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:29:44.6257 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:29:44.6257 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: mqtt
+2022-06-20 10:29:45.0363 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:31:22.7151 Info Message Template Auto Format enabled
+2022-06-20 10:31:22.7151 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:31:22.7151 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:31:22.7684 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:31:22.7753 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:31:22.7753 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:31:22.7753 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:31:22.7958 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:31:22.7958 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: mqtt
+2022-06-20 10:31:23.1895 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=79, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:32:35.3756 Info Message Template Auto Format enabled
+2022-06-20 10:32:35.3756 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:32:35.3905 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:32:35.4305 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:32:35.4379 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:32:35.4379 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:32:35.4379 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:32:35.4596 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:32:35.5801 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 10:32:35.9322 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:32:36.1182 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 10:35:03.2437 Info Message Template Auto Format enabled
+2022-06-20 10:35:03.2497 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:35:03.2497 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:35:03.3530 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:35:03.3530 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:35:03.3530 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:35:03.3530 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:35:03.3820 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:35:03.5147 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 62
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 53
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 10:35:03.8350 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:35:04.0256 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 62
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 53
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 10:35:10.9138 Info Message Template Auto Format enabled
+2022-06-20 10:35:10.9197 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:35:10.9197 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:35:10.9755 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:35:10.9829 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:35:10.9829 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:35:10.9933 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:35:10.9933 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:35:17.7151 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 62
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 53
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 10:35:18.0346 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:35:18.2372 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 62
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 53
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 10:50:05.8708 Info Message Template Auto Format enabled
+2022-06-20 10:50:05.8708 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:50:05.8708 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:50:06.6207 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:50:06.6207 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:50:06.6207 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:50:06.6374 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:50:06.6640 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:52:12.8824 Info Message Template Auto Format enabled
+2022-06-20 10:52:12.8886 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:52:12.8886 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:52:12.9444 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:52:12.9494 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:52:12.9494 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:52:12.9494 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:52:12.9702 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:52:46.5076 Info Message Template Auto Format enabled
+2022-06-20 10:52:46.5135 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 10:52:46.5135 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 10:52:46.5618 Info Adding target FileTarget(Name=allfile)
+2022-06-20 10:52:46.5618 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 10:52:46.5618 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 10:52:46.5752 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 10:52:46.5885 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:52:46.7088 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 88
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 79
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 10:52:47.0316 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=80, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 10:52:47.2310 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 88
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 79
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:14:31.6171 Info Message Template Auto Format enabled
+2022-06-20 12:14:31.6233 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:14:31.6233 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:14:31.6780 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:14:31.6817 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:14:31.6817 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:14:31.7299 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:14:31.7475 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=109, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:15:04.0565 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 95
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 86
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:15:05.8020 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=109, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:19:17.9445 Info Message Template Auto Format enabled
+2022-06-20 12:19:17.9515 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:19:17.9515 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:19:18.0412 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:19:18.0412 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:19:18.0412 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:19:18.0896 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:19:18.1156 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=109, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:22:42.4517 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 105
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 96
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:23:03.8146 Info Message Template Auto Format enabled
+2022-06-20 12:23:03.8239 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:23:03.8239 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:23:03.9411 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:23:03.9511 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:23:03.9511 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:23:04.0095 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:23:04.0313 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=95, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:28:37.9442 Info Message Template Auto Format enabled
+2022-06-20 12:28:37.9504 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:28:37.9504 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:28:39.5512 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:28:39.5512 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:28:39.5581 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:28:39.5930 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:28:39.6200 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:29:27.9042 Info Message Template Auto Format enabled
+2022-06-20 12:29:27.9042 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:29:27.9160 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:29:27.9618 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:29:27.9694 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:29:27.9694 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:29:28.0124 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:29:28.0399 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:30:24.1837 Info Message Template Auto Format enabled
+2022-06-20 12:30:24.1837 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:30:24.1964 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:30:26.0603 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:30:26.0603 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:30:26.0603 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:30:26.1050 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:30:26.1362 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:30:26.3019 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 105
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 96
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:30:26.6005 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:30:26.7866 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String hostName, String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 105
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 96
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:31:20.4403 Info Message Template Auto Format enabled
+2022-06-20 12:31:20.4467 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:31:20.4467 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:31:21.5313 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:31:21.5313 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:31:21.5313 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:31:21.5742 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:31:21.6012 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:31:21.7606 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:31:22.0330 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:31:22.2151 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:31:38.3758 Info Message Template Auto Format enabled
+2022-06-20 12:31:38.3758 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:31:38.3869 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:31:38.4356 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:31:38.4356 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:31:38.4356 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:31:38.4812 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:31:38.5067 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:31:49.3270 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:31:53.0727 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:31:55.1789 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:32:20.9940 Info Message Template Auto Format enabled
+2022-06-20 12:32:20.9940 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:32:20.9940 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:32:22.0945 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:32:22.0945 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:32:22.0945 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:32:22.1374 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:32:22.1620 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:32:22.3251 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:32:22.6234 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:32:22.8045 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:43:12.2295 Info Message Template Auto Format enabled
+2022-06-20 12:43:12.2295 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:43:12.2295 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:43:12.2906 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:43:12.2967 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:43:12.2967 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:43:12.3435 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:43:12.3615 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:43:12.5214 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:43:12.8012 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:43:12.9831 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessageToRemoteHost(String message) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 103
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 94
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:52:07.1127 Info Message Template Auto Format enabled
+2022-06-20 12:52:07.1190 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:52:07.1190 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:52:07.1792 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:52:07.1853 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:52:07.1853 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:52:07.2319 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:52:07.2508 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:52:07.5212 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:52:07.8029 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=115, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:52:07.9856 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:53:09.6561 Info Message Template Auto Format enabled
+2022-06-20 12:53:09.6561 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 12:53:09.6669 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 12:53:09.7109 Info Adding target FileTarget(Name=allfile)
+2022-06-20 12:53:09.7180 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 12:53:09.7180 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 12:53:09.7642 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 12:53:09.7813 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:53:10.0182 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 12:53:10.2975 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 12:53:10.4832 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 13:13:04.6037 Info Message Template Auto Format enabled
+2022-06-20 13:13:04.6037 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 13:13:04.6037 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 13:13:04.6570 Info Adding target FileTarget(Name=allfile)
+2022-06-20 13:13:04.6570 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 13:13:04.6675 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 13:13:04.7010 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 13:13:04.7259 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 13:13:04.9650 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 13:13:05.3282 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 13:13:05.5561 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 13:16:21.9535 Info Message Template Auto Format enabled
+2022-06-20 13:16:21.9535 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 13:16:21.9637 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 13:16:22.0045 Info Adding target FileTarget(Name=allfile)
+2022-06-20 13:16:22.0045 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 13:16:22.0110 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 13:16:22.0462 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 13:16:22.0721 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 13:16:22.3052 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 13:16:22.5795 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 13:16:22.7601 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 13:52:47.2171 Info Message Template Auto Format enabled
+2022-06-20 13:52:47.2171 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 13:52:47.2276 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 13:52:47.2703 Info Adding target FileTarget(Name=allfile)
+2022-06-20 13:52:47.2767 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 13:52:47.2767 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 13:52:47.3136 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 13:52:47.3413 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 13:52:47.5777 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 13:52:47.8554 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 13:52:48.0378 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:00:05.5320 Info Message Template Auto Format enabled
+2022-06-20 14:00:05.5320 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:00:05.5429 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:00:05.6009 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:00:05.6009 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:00:05.6009 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:00:05.6416 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:00:05.6568 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:00:05.9148 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:00:06.2337 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:00:06.4184 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:04:06.0094 Info Message Template Auto Format enabled
+2022-06-20 14:04:06.0094 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:04:06.0094 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:04:06.0744 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:04:06.0744 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:04:06.0744 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:04:06.1389 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:04:06.1608 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:04:06.4081 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:04:06.6953 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:04:06.8785 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MQTTBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 111
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 102
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:18:19.8618 Info Message Template Auto Format enabled
+2022-06-20 14:18:19.8618 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:18:19.8709 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:18:19.9225 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:18:19.9225 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:18:19.9225 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:18:19.9653 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:18:19.9898 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:18:20.2330 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 115
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 106
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:18:20.5135 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:18:20.7025 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 115
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent) in D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Targets.MQTT\MqttTarget.cs:line 106
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:24:54.4402 Info Message Template Auto Format enabled
+2022-06-20 14:24:54.4402 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:24:54.4496 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:24:54.4931 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:24:54.4996 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:24:54.4996 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:24:54.5405 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:24:54.5668 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:24:54.8024 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:24:55.0881 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:24:55.2695 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:26:26.6046 Info Message Template Auto Format enabled
+2022-06-20 14:26:26.6046 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:26:26.6046 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:26:26.6671 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:26:26.6671 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:26:26.6671 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:26:26.7162 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:26:26.7400 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:26:26.9702 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:26:27.2557 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:26:27.4332 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:26:55.7027 Info Message Template Auto Format enabled
+2022-06-20 14:26:55.7027 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:26:55.7157 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:26:55.7979 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:26:55.7979 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:26:55.8081 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:26:55.8430 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:26:55.8658 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:26:56.0850 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:26:56.3577 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:26:56.5432 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:28:24.8854 Info Message Template Auto Format enabled
+2022-06-20 14:28:24.8854 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:28:24.8854 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:28:24.9404 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:28:24.9404 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:28:24.9490 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:28:24.9852 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:28:25.0099 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:28:25.2344 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:28:25.5706 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:28:25.7559 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:28:36.6959 Info Message Template Auto Format enabled
+2022-06-20 14:28:36.7017 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:28:36.7017 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:28:36.7499 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:28:36.7499 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:28:36.7620 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:28:36.7959 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:28:36.8239 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:28:37.0649 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:28:37.3376 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:28:37.5206 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:29:27.6653 Info Message Template Auto Format enabled
+2022-06-20 14:29:27.6708 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:29:27.6708 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:29:27.7202 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:29:27.7202 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:29:27.7202 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:29:27.7618 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:29:27.7849 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:29:28.0141 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:29:28.2842 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:29:28.4627 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:29:45.3892 Info Message Template Auto Format enabled
+2022-06-20 14:29:45.3892 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:29:45.4005 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:29:45.4473 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:29:45.4473 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:29:45.4473 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:29:45.4989 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:29:45.5157 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:29:45.7427 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:29:46.0287 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:29:46.2056 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:33:01.3990 Info Message Template Auto Format enabled
+2022-06-20 14:33:01.4055 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-20 14:33:01.4055 Info Loading assembly: NLog.Targets.MQTT
+2022-06-20 14:33:01.4524 Info Adding target FileTarget(Name=allfile)
+2022-06-20 14:33:01.4524 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-20 14:33:01.4524 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-20 14:33:01.4946 Info Adding target MqttTarget(Name=mqtt)
+2022-06-20 14:33:01.5194 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:33:01.7451 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)
+2022-06-20 14:33:02.0213 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, mqtt, ConfigItems=110, FilePath=D:\000000-IIoTGateway\0000-NLog.Targets.MQTT\src\NLog.Demo\bin\Debug\net6.0\NLog.config
+2022-06-20 14:33:02.2139 Error MqttTarget(Name=mqtt): Exception in Write Exception: MQTTnet.Exceptions.MqttCommunicationException: The client is not connected.
+   at MQTTnet.Client.MqttClient.ThrowIfNotConnected()
+   at MQTTnet.Client.MqttClient.PublishAsync(MqttApplicationMessage applicationMessage, CancellationToken cancellationToken)
+   at NLog.Targets.MQTT.MqttTarget.SendTheMessage2MqttBroker(String payload)
+   at NLog.Targets.MQTT.MqttTarget.Write(LogEventInfo logEvent)
+   at NLog.Targets.Target.Write(AsyncLogEventInfo logEvent)

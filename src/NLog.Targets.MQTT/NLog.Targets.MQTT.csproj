@@ -14,13 +14,13 @@
 		<Description>An NLog Target To MQTT Broker</Description>
 		
 		<PackageTags>NLog Mqtt Log Logging</PackageTags>
-		<Version>0.1.0.1</Version>
+		<Version>1.0</Version>
 		<PackageProjectUrl>https://github.com/iioter/NLog.Targets.MQTT</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/iioter/NLog.Targets.MQTT</RepositoryUrl>
 		<PackageReleaseNotes>https://github.com/iioter/NLog.Targets.MQTT</PackageReleaseNotes>
 		<RepositoryType>Git</RepositoryType>
 		<Copyright>iotgateway</Copyright>
-		<AssemblyVersion>0.1.0.1</AssemblyVersion>
+		<AssemblyVersion>1.0</AssemblyVersion>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -30,6 +30,7 @@
 	
 	<ItemGroup>
 		<PackageReference Include="MQTTnet" Version="3.1.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<PackageReference Include="NLog" Version="5.0.1" />
 	</ItemGroup>
 	

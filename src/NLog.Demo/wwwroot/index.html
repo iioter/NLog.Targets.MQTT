@@ -1,0 +1,87 @@
+<html>
+<head>
+    <script src="./jquery.min.js"></script>
+    <script src="./mqtt.min.js"></script>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <a href="swagger/index.html" target="_blank">swagger</a>
+        <button type="button" @click="postClick()">GetData</button>
+
+        <table border="" cellspacing="" cellpadding="">
+            <tr>
+                <th>timestamp</th>
+                <th>level</th>
+                <th>message</th>
+                <th>machine</th>
+                <th>processid</th>
+                <th>threadname</th>
+                <th>logger</th>
+                <th>callsite</th>
+                <th>url</th>
+                <th>action</th>
+                <th>exception</th>
+            </tr>
+            <tr v-for="(log, index) in logs">
+                <td>{{log.timestamp}}</td>
+                <td>{{log.level}}</td>
+                <td>{{log.message}}</td>
+                <td>{{log.machine}}</td>
+                <td>{{log.processid}}</td>
+                <td>{{log.threadname}}</td>
+                <td>{{log.logger}}</td>
+                <td>{{log.callsite}}</td>
+                <td>{{log.url}}</td>
+                <td>{{log.action}}</td>
+                <td>{{log.exception}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script>
+        var options = {
+            //mqtt客户端的id，这里面应该还可以加上其他参数，具体看官方文档
+            clientId: 'mqttjs_' + (Math.random() * 10000000).toString()
+        }
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Log from Nlog Mqtt(WebSocket) Target!',
+                logs: []
+            },
+            methods: {
+                postClick() {
+                    $.get("/WeatherForecast",function(data,status){
+                        console.log(status);
+                    });
+                }
+            },
+            mounted() {
+                var client = mqtt.connect('ws://' + window.location.host + '/mqtt', options);
+                client.on('connect',
+                    function() {
+                        client.subscribe('log',
+                            function(err) {
+                                if (!err) {
+                                    console.log("subed!");
+                                } else {
+                                    alert("subed error!");
+                                }
+                            });
+                    });
+                client.on('message',
+                    function(topic, message) {
+                        if (topic === 'log') {
+                            if (app.logs.length > 50)
+                                app.logs.length = 0;
+                            app.logs.unshift($.parseJSON(message.toString()));
+                        }
+                    });
+            }
+        });
+    </script>
+</body>
+</html>

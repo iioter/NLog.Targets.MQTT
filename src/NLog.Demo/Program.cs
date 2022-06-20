@@ -1,3 +1,5 @@
+using MQTTnet.AspNetCore;
+using MQTTnet.AspNetCore.Extensions;
 using NLog;
 using NLog.Web;
 
@@ -21,7 +23,24 @@ try
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
     builder.Host.UseNLog();
 
+    //AddHostedMqttServer
+    builder.Services.AddHostedMqttServer(mqttServer =>
+        {
+            mqttServer.WithoutDefaultEndpoint();
+        })
+        .AddMqttConnectionHandler()
+        .AddConnections();
+
+    //Config Port
+    builder.WebHost.UseKestrel(option =>
+    {
+        option.ListenAnyIP(1883, l => l.UseMqtt());
+        option.ListenAnyIP(80);
+    });
     var app = builder.Build();
+
+    //UseStaticFiles html js etc.
+    app.UseStaticFiles();
 
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
@@ -31,6 +50,18 @@ try
     }
 
     app.UseAuthorization();
+
+    app.UseRouting();
+
+    //Websocket Mqtt
+    app.UseEndpoints(endpoints =>
+    {
+        //MqttServerWebSocket
+        endpoints.MapConnectionHandler<MqttConnectionHandler>("/mqtt", options =>
+        {
+            options.WebSockets.SubProtocolSelector = MqttSubProtocolSelector.SelectSubProtocol;
+        });
+    });
 
     app.MapControllers();
 
